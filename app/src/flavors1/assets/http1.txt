@@ -1,0 +1,18 @@
+Cache 头域
+
+If-Modified-Since 比对时间 判断是否用缓存  例如：If-Modified-Since: Thu, 09 Feb 2012 09:07:57 GMT
+
+If-None-Match  根据ETag 对比资源是否更新 判断是否用缓存  If-None-Match: "03f2b33c0bfcc1:0"
+ 
+Pragma 防止页面被缓存 例如： Pragma: no-cache
+
+Cache-Control 指定Response-Request遵循的缓存机制
+
+
+Client 头域
+
+Accept 浏览器端可以接受的媒体类型, 例如：  Accept: text/html 例如  Accept: */*  一般用这个 所有类型
+
+Accept-Encoding：浏览器申明自己接收的编码方法   是否支持压缩 例如： Accept-Encoding: gzip, deflate
+
+Accept-Language：浏览器申明自己接收的语言  例如： Accept-Language: en-us
